@@ -53,3 +53,6 @@ functions:
 ### Adding event trigger
 S3 bucket is added as the first tigger. The application will be invoke whenever a file is being uploaded to S3 bucket
 
+![image](https://user-images.githubusercontent.com/22501900/235310851-e400c503-70c2-48c1-a906-dcfb5ca6eda9.png)
+
+
