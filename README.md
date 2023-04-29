@@ -50,7 +50,7 @@ functions:
   who_trigger_me: serverless-assignment-3dot7-liau-dev-who_trigger_me (1.5 kB)
 ```
 
-### Adding event trigger
+### Adding S3 bucket event trigger
 `S3 bucket` is added as the first tigger. The application will be invoke whenever a file is being uploaded to S3 bucket
 
 ![image](https://user-images.githubusercontent.com/22501900/235310851-e400c503-70c2-48c1-a906-dcfb5ca6eda9.png)
@@ -59,8 +59,16 @@ The `Log events` shows that the application was invoked by S3 bucket
 
 ![image](https://user-images.githubusercontent.com/22501900/235311852-0653a324-550b-4c2c-9517-717bf94c509c.png)
 
+### Adding SNS event trigger
 `Simple Notification System (SNS)` is added as the second trigger. The application will be invoke whenever a message is publish to the SNS topic.
 
 ![image](https://user-images.githubusercontent.com/22501900/235312134-40b8ad45-7023-4075-8111-880e33a3b123.png)
+
+![image](https://user-images.githubusercontent.com/22501900/235312256-c03cafea-c801-4452-b896-2d4e00a5ed01.png)
+
+The `Log events` shows that the application was invoked by SNS
+
+![image](https://user-images.githubusercontent.com/22501900/235312555-d1e5b0c8-b1a5-4dbe-95cc-35e04e84203b.png)
+
 
 
