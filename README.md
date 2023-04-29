@@ -16,12 +16,14 @@ import json
 
 def who_trigger_me(event, context):
     try:
-        print(f"I'm triggered by {event['Records'][0]['eventSource']} !")
+        message = f"I'm triggered by {event['Records'][0]['eventSource']} !"
     except KeyError:
-        print(f"I'm triggered by {event['Records'][0]['EventSource']} !")
-        
+        message = f"I'm triggered by {event['Records'][0]['EventSource']} !"
+    
+    print(message)
+    
     body = {
-        "message": f"I'm triggered by {event['Records'][0]['eventSource']} !",
+        "message": message,
         "input": event,
     }
     
