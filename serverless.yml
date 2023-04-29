@@ -1,0 +1,12 @@
+service: serverless-assignment-3dot7-liau
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: ap-southeast-1
+
+functions:
+  who_trigger_me:
+    handler: handler.who_trigger_me
