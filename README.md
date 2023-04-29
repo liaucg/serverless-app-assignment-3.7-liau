@@ -10,7 +10,7 @@ For this assigment there are 2 things to be accomplished:
 ## Create serverless application
 The main objective of this assignment is to about the invocation of serverless application by event trigger. As such I'm going to create a very simple servereless application with Python. This application will simply print out the source of the event it recieved. This will demostrate that the serverless is indeed invoked by the 2 events that will be created.
 
-### (handler.py)
+### [handler.py](handler.py)
 ```python
 import json
 
@@ -29,7 +29,7 @@ def who_trigger_me(event, context):
     
     return {"statusCode": 200, "body": json.dumps(body)}
 ```
-### (serverless.yml)
+### [serverless.yml](serverless.yml)
 ```yml
 service: serverless-app-assignment-3dot7-liau
 
