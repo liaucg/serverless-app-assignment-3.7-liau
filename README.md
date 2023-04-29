@@ -15,11 +15,16 @@ The main objective of this assignment is to about the invocation of serverless a
 import json
 
 def who_trigger_me(event, context):
+    try:
+        print(f"I'm triggered by {event['Records'][0]['eventSource']} !")
+    except KeyError:
+        print(f"I'm triggered by {event['Records'][0]['EventSource']} !")
+        
     body = {
-        "message": f"I'm triggered by {event['Records'][0]['EventSource']} !",
+        "message": f"I'm triggered by {event['Records'][0]['eventSource']} !",
         "input": event,
     }
-
+    
     return {"statusCode": 200, "body": json.dumps(body)}
 ```
 ### serverless.yml
