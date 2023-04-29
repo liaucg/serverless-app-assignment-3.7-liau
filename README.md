@@ -55,4 +55,9 @@ S3 bucket is added as the first tigger. The application will be invoke whenever 
 
 ![image](https://user-images.githubusercontent.com/22501900/235310851-e400c503-70c2-48c1-a906-dcfb5ca6eda9.png)
 
+The `Log events` shows that the application was invoked by S3 bucket
+
+![image](https://user-images.githubusercontent.com/22501900/235311852-0653a324-550b-4c2c-9517-717bf94c509c.png)
+
+
 
